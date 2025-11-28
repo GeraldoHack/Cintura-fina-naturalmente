@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cintura Fina Naturalmente</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 25px 20px;
+            text-align: center;
+            border-radius: 20px 20px 0 0;
+        }
+        
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+        
+        .subtitle {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .video-container {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .cta-section {
+            padding: 20px;
+            text-align: center;
+            background-color: #f8f9fa;
+            margin: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e74c3c;
+            margin: 15px 0;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 5px 15px rgba(255, 126, 95, 0.4);
+            transition: all 0.3s ease;
+            margin-top: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255, 126, 95, 0.6);
+        }
+        
+        .btn-ok {
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            padding: 12px 25px;
+            font-size: 16px;
+        }
+        
+        .features {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        
+        .feature {
+            flex: 0 0 45%;
+            background: white;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+        
+        .feature i {
+            font-size: 24px;
+            color: #4facfe;
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #777;
+            font-size: 14px;
+        }
+        
+        /* Popup Styles */
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            animation: fadeIn 0.5s;
+        }
+        
+        .popup {
+            background: white;
+            padding: 25px;
+            border-radius: 20px;
+            max-width: 90%;
+            width: 400px;
+            text-align: center;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            animation: popIn 0.5s;
+            position: relative;
+        }
+        
+        .popup h2 {
+            color: #4facfe;
+            margin-bottom: 15px;
+        }
+        
+        .popup p {
+            margin-bottom: 20px;
+        }
+        
+        .close-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: none;
+            border: none;
+            font-size: 20px;
+            color: #777;
+            cursor: pointer;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes popIn {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 600px) {
+            .feature {
+                flex: 0 0 100%;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            .btn {
+                padding: 12px 25px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Cintura Fina Naturalmente</h1>
+            <p class="subtitle">Exercícios básicos e refeições que ajudam a alcançar a cintura dos seus sonhos</p>
+        </header>
+        
+        <div class="video-container">
+            <div class="video-wrapper">
+                <!-- Substitua o src abaixo pelo link direto do seu vídeo -->
+                <iframe src="https://drive.google.com/file/d/16SkkbppEPQRw3mTTUN90W7bvFfmWhYns/preview" 
+                        allow="autoplay" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+        <div class="cta-section">
+            <h2>Descubra todos os segredos para uma cintura fina</h2>
+            <p>Nosso ebook completo com exercícios específicos e plano alimentar</p>
+            <div class="price">Apenas 99MT</div>
+            <a href="https://wa.me/258856574313?text=Olá! Gostaria de adquirir o ebook Cintura Fina Naturalmente" class="btn" target="_blank">
+                Adquirir Ebook Agora
+            </a>
+        </div>
+        
+        <div class="features">
+            <div class="feature">
+                <i>💪</i>
+                <h3>Exercícios Básicos</h3>
+                <p>Sequências simples que qualquer pessoa pode fazer em casa</p>
+            </div>
+            <div class="feature">
+                <i>🥗</i>
+                <h3>Refeições Especiais</h3>
+                <p>Receitas deliciosas que ajudam a queimar gordura abdominal</p>
+            </div>
+            <div class="feature">
+                <i>⏱️</i>
+                <h3>Resultados Rápidos</h3>
+                <p>Veja mudanças significativas em poucas semanas</p>
+            </div>
+            <div class="feature">
+                <i>📱</i>
+                <h3>Acesso Imediato</h3>
+                <p>Receba o ebook instantaneamente após a compra</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2025 Cintura Fina Naturalmente. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+    
+    <!-- Popup de Boas-Vindas -->
+    <div class="popup-overlay" id="popup">
+        <div class="popup">
+            <h2>Bem-vinda!</h2>
+            <p>Descubra os segredos para uma cintura fina com nosso método natural.</p>
+            <p>Assista ao vídeo e conheça nosso método antes de adquirir o ebook completo.</p>
+            <button class="btn btn-ok" id="close-popup">OK, Entendi</button>
+        </div>
+    </div>
+
+    <script>
+        // Fechar popup quando clicar no botão OK
+        document.getElementById('close-popup').addEventListener('click', function() {
+            document.getElementById('popup').style.display = 'none';
+        });
+        
+        // Fechar popup quando clicar fora dele
+        document.getElementById('popup').addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
